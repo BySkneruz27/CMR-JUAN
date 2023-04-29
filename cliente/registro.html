@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de  clientes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css"
+        integrity="sha512-Q45sLsTldTzjZq3M6UaOC6AF9o3Yl8qyWwNgFxFKj2BJR+zzv8e1Wm7d+qmJj9c32kaS+gyPmJugfvj51/B5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./clientes.css">
+</head>
+
+<body>
+    <section class="encabezado">
+        <h1 class="titulo">Registro de clientes </h1>
+    </section>
+
+
+    <div class="contenedor">
+        <div>
+            <h3 class="titulo2">Información del cliente</h3>
+        </div>
+        <form  id="form_cliente">
+            <div class="grid-item"> 
+                <label for="">Nombre completo</label>
+                <input type="text" name="nombre" placeholder="Ingrese nombre">
+            </div>
+            <div class="grid-item">
+                <label for="">Correo electrónico</label>
+                <input type="email" name="correo" placeholder="Ingrese correo">
+            </div>
+            <div class="grid-item">
+                <label for="">Número telefónico</label>
+                <input type="text" name="telefono" placeholder="Ingrese telefono">
+            </div>
+            <div class="grid-item">
+                <label for="">Fecha</label>
+                <input id="inputfecha" type="date" name="fecha">
+            </div>
+            <button id="btn_agregar" type="submit"> Agregar </button>
+        </form>
+    </div>
+
+    <div class="contenedor">
+        <h2  class="titulo2" id="mensaje"></h2>
+        <table id="tabla">
+
+        </table>
+    </div>
+    <a href="index.html" class="boton">Regresar a la página de inicio</a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./script_clientes.js"></script>
+</body>
+
+</html>
